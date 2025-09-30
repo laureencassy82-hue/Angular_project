@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  @apply shadow-md;
+}
+
+header button {
+  @apply transition duration-200 ease-in-out;
+}
+
+@media (max-width: 640px) {
+  header {
+    @apply flex-col space-y-4;
+  }
+  header div {
+    @apply w-full justify-center;
+  }
+}
