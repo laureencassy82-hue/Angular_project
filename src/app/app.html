@@ -1,3 +1,49 @@
 <div class="">
   <app-header></app-header>
+
+  <nav class="grid grid-cols-4  bg-gray-100 ">
+    <a 
+      [routerLink]="'/get-quote'" 
+      class="flex items-center justify-center gap-2 bg-white shadow-md p-3  transition-all duration-200
+            hover:shadow-lg hover:scale-105 text-purple-700 font-medium text-sm text-center"
+      routerLinkActive="bg-yellow-400"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-700 text-white text-xs font-bold">1</span>
+      <span>Get a quote</span>
+    </a>
+
+    <a 
+      [routerLink]="'/select-plan'" 
+      class="flex items-center justify-center gap-2 bg-white shadow-md p-3  transition-all duration-200
+            hover:shadow-lg hover:scale-105 text-purple-700 font-medium text-sm text-center"
+      routerLinkActive="bg-yellow-400"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-700 text-white text-xs font-bold">2</span>
+      <span>Select Plan</span>
+    </a>
+
+    <a 
+      [routerLink]="'/my-health'" 
+      class="flex items-center justify-center gap-2 bg-white shadow-md p-3  transition-all duration-200
+            hover:shadow-lg hover:scale-105 text-purple-700 font-medium text-sm text-center"
+      routerLinkActive="bg-yellow-400"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-700 text-white text-xs font-bold">3</span>
+      <span>My Health</span>
+    </a>
+
+    <a 
+      [routerLink]="'/comfirmation'" 
+      class="flex items-center justify-center gap-2 bg-white shadow-md p-3 transition-all duration-200
+            hover:shadow-lg hover:scale-105 text-purple-700 font-medium text-sm text-center"
+      routerLinkActive="bg-yellow-400"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <span class="flex items-center justify-center w-6 h-6 rounded-full bg-purple-700 text-white text-xs font-bold">4</span>
+      <span>Confirmation</span>
+    </a>
+</nav>
+
+  <main class="min-h-screen bg-gray-100 p-4">
+    <router-outlet></router-outlet>
+  </main>
 </div>

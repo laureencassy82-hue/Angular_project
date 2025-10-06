@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-get-quote',
-  imports: [],
+  standalone: true,
   templateUrl: './get-quote.html',
-  styleUrl: './get-quote.css'
+  styleUrls: ['./get-quote.css']
 })
-export class GetQuote {
-
-}
+export class GetQuoteComponent {}

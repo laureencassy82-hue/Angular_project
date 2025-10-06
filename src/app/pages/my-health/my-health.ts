@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-my-health',
-  imports: [],
+  standalone: true,
   templateUrl: './my-health.html',
-  styleUrl: './my-health.css'
+  styleUrls: ['./my-health.css']
 })
-export class MyHealth {
-
-}
+export class MyHealthComponent {}
